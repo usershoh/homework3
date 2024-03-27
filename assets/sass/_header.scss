@@ -1,0 +1,200 @@
+.navbar_top{
+    @include flex(center, space-between, 0);
+    padding: 12px 0;
+
+    &_logo{
+        width: 97px;
+        height: 21px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_shop{
+        @include flex(center, flex-start, 24px);
+    
+        i{
+            font-size: 20px;
+            color: $color-green;
+        }
+    }
+    
+}
+.navbar_top_middle{
+    @include flex(center, flex-start, 20px);
+
+    &_a{
+        @include flex(center, flex-start, 15px);
+        height: 25px;
+
+        a{
+            font-size: 14px;
+            color: $color-gray;
+        }
+        &_border{
+            width: 1px;
+            background-color: $color-gray;
+            height: 20px;
+        }
+    }
+    &_brend{
+        @include flex(center, flex-start, 10px);
+
+        i{
+            font-size: 20px;
+            color: $color-gray;
+        }
+    }
+    &_search{
+        width: 285px;
+        height: 48px;
+        @include flex(center, flex-start, 10px);
+        padding: 0 20px;
+        border: solid 1px #EFEFEF;
+        border-radius: 71px;
+        padding-top: 2px;
+
+        i{
+            font-size: 20px;
+            color: $color-gray;
+        }
+        input{
+            color: $color-gray;
+            font-size: 14px;
+            outline: 0;
+            outline-offset: 0;
+            border: none;
+            width: 100%;
+            background-color: transparent;
+        }
+    }
+}
+
+
+
+
+#check{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.closed{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .menu{
+        display: block;
+        font-size: 20px;
+        order: 3;
+        color: $color-gray;
+    }
+    .navbar_top_middle{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 400px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: rgb(250, 250, 250);
+        padding: 30px 0;
+        transition: right 0.5s;
+
+        &_search{
+            width: 80%;
+            margin: 0 auto;
+            order: 1;
+            border: 2px solid #fff;
+
+            i{
+                color: $color-black;
+            }
+            input{
+                color: $color-black;
+            }
+        }
+
+        &_a{
+            @include grid(1fr, 10px);
+            order: 2;
+            width: 70%;
+            justify-items: flex-start;
+            justify-content: flex-start;
+
+            a{
+                color: $color-black;
+            }
+        }
+        &_brend{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+    }
+    .closed{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: $color-black;
+        font-size: 15px;
+    }
+
+    #check:checked ~ .navbar_top_middle{
+        right: 0;
+    }
+
+    .navbar_top{
+        @include flex(center, end, 0);
+        position: relative;
+
+        &_logo{
+            position: absolute;
+            top: 26px;
+            left: 0;
+        }
+
+
+
+        &_shop{
+            order: 2;
+            margin-right: 20px;
+            @include flex(center, flex-start, 20px);
+
+
+            i{
+                font-size: 20px;
+                border: 1px solid #EFEFEF;
+                width: 48px;
+                height: 48px;
+                border-radius: 100%;
+                color: $color-green;
+                @include flex(center, center, 0);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar_top_middle{
+        width: 80%;
+    }
+    .menu{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .navbar_top{
+        &_shop{
+            i{
+                width: 30px;
+                height: 30px;
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

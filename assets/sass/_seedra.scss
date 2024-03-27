@@ -1,0 +1,44 @@
+.seedra > div{
+    @include grid(1fr 1fr, 30px);
+    align-items: center;
+    padding: 30px 0;
+
+    img{
+        width: 100%;
+    }
+}
+.seedra_text{
+    h1{
+        padding-bottom: 20px;
+        font-size: 36px;
+        color: $color-black;
+    }
+    p{
+        font-size: 16px;
+        color: $color-black;
+    }
+}
+
+@media (max-width: 1300px){
+    .seedra_text{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 950px){
+    .seedra_text{
+        br{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .seedra > div{
+        @include grid(1fr, 30px);
+    }
+}

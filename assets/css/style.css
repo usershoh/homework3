@@ -970,5 +970,46 @@ body {
     font-size: 11px;
   }
 }
+.seedra > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 30px 0;
+}
+.seedra > div img {
+  width: 100%;
+}
+
+.seedra_text h1 {
+  padding-bottom: 20px;
+  font-size: 36px;
+  color: #1F2533;
+}
+.seedra_text p {
+  font-size: 16px;
+  color: #1F2533;
+}
+
+@media (max-width: 1300px) {
+  .seedra_text h1 {
+    font-size: 20px;
+  }
+  .seedra_text p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 950px) {
+  .seedra_text br {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .seedra > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

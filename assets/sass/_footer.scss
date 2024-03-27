@@ -1,0 +1,130 @@
+.footer_title{
+    @include grid(1fr 0.5fr 1fr, 0px);
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid $color-green;
+
+    &_left{
+        @include flex(center, flex-start, 0);
+        align-items: center;
+
+        &_border{
+            height: 25px;
+            width: 0.5px;
+            border: 0.5px solid $color-green;
+            margin: 0 10px;
+        }
+        
+        a{
+            font-size: 14px;
+            color: $color-gray;
+        }
+    }
+    &_right{
+        align-items: center;
+        @include flex(center, flex-start, 0);
+
+        &_border{
+            height: 25px;
+            width: 0.5px;
+            border: 0.5px solid $color-green;
+            margin: 0 10px;
+        }
+        
+        a{
+            font-size: 14px;
+            color: $color-gray;
+        }
+    }
+    &_logo{
+        width: 125px;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+.footer_logo{
+    width: 125px;
+    display: none;
+
+    img{
+        width: 100%;
+    }
+}
+.footer_bottom{
+    @include flex(center, space-between, 0);
+    padding: 15px 0;
+
+    &_brend{
+        @include flex(center, flex-start, 15px);
+
+        i{
+            font-size: 20px;
+            color: $color-green;
+        }
+
+    }
+    p{
+        font-size: 15px;
+        color: $color-gray;
+    }
+}
+@media (max-width: 1000px){
+    .footer_logo{
+        display: block;
+        @include flex(center, center, 0);
+        justify-items: center;
+        margin-left: 40%;
+        width: 20%;
+
+        img{
+            text-align: center;
+        }
+    }
+    .footer_title{
+        @include flex(center, space-between, 0);
+        &_logo{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .footer_title{
+        @include flex(center, space-between, 0);
+        &_left{
+            @include grid(1fr, 20px);
+            &_border{
+                display: none
+            }
+        }
+        &_right{
+            @include grid(1fr, 20px);
+            justify-content: flex-start;
+            align-items: flex-start;
+            &_border{
+                display: none
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .footer_logo{
+        width: 40%;
+        margin: 0 30%;
+    }
+    .footer_title{
+        &_left{
+            a{
+                font-size: 12px;
+            }
+        }
+        &_right{
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+}

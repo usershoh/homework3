@@ -1011,5 +1011,146 @@ body {
     gap: 30px;
   }
 }
+.footer_title {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  gap: 0px;
+  align-items: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #359740;
+}
+.footer_title_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  align-items: center;
+}
+.footer_title_left_border {
+  height: 25px;
+  width: 0.5px;
+  border: 0.5px solid #359740;
+  margin: 0 10px;
+}
+.footer_title_left a {
+  font-size: 14px;
+  color: #70737C;
+}
+.footer_title_right {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+.footer_title_right_border {
+  height: 25px;
+  width: 0.5px;
+  border: 0.5px solid #359740;
+  margin: 0 10px;
+}
+.footer_title_right a {
+  font-size: 14px;
+  color: #70737C;
+}
+.footer_title_logo {
+  width: 125px;
+}
+.footer_title_logo img {
+  width: 100%;
+}
+
+.footer_logo {
+  width: 125px;
+  display: none;
+}
+.footer_logo img {
+  width: 100%;
+}
+
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 15px 0;
+}
+.footer_bottom_brend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.footer_bottom_brend i {
+  font-size: 20px;
+  color: #359740;
+}
+.footer_bottom p {
+  font-size: 15px;
+  color: #70737C;
+}
+
+@media (max-width: 1000px) {
+  .footer_logo {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    justify-items: center;
+    margin-left: 40%;
+    width: 20%;
+  }
+  .footer_logo img {
+    text-align: center;
+  }
+  .footer_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .footer_title_logo {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .footer_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .footer_title_left {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer_title_left_border {
+    display: none;
+  }
+  .footer_title_right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer_title_right_border {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .footer_logo {
+    width: 40%;
+    margin: 0 30%;
+  }
+  .footer_title_left a {
+    font-size: 12px;
+  }
+  .footer_title_right a {
+    font-size: 12px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

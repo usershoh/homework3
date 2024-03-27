@@ -1,0 +1,91 @@
+.story > div{
+    @include grid(1fr, 30px);
+    margin-bottom: 30px
+}
+.story_top{
+    @include grid(1fr 1fr, 20px);
+    align-items: center;
+    
+    img{
+        width: 100%;
+    }
+
+    &_text{
+        h1{
+            font-size: 30px;
+            color: $color-black;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 14px;
+            color: $color-black;
+        }
+    }
+}
+.story_bottom{
+    @include grid(1fr 1fr, 20px);
+    align-items: center;
+
+    img{
+        width: 100%;
+    }
+
+    &_text{
+        h1{
+            font-size: 30px;
+            color: $color-black;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .story{
+        br{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .story_top, .story_bottom{
+        h1{
+            font-size: 22px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+}
+@media (max-width: 600px){
+    .story_top, .story_bottom{
+        @include grid(1fr, 30px);
+    }
+    .story_bottom{
+        img{
+            order: 2;
+        }
+        &_text{
+            order: 1;
+        }
+    }
+    .story_top, .story_bottom{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 130%;
+        }
+    }
+}
+@media (max-width: 400px){
+    .story_top, .story_bottom{
+        h1{
+            font-size: 22px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+}

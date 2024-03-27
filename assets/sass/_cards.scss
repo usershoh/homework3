@@ -1,0 +1,103 @@
+.cards > div{
+    @include flex(flex-start, space-between, 0px);
+}
+.cards_items{
+    @include grid(1fr 1fr 1fr, 20px);
+    width: 76%;
+}
+.cards_filter{
+    width: 20%;
+    @include grid(1fr, 10px);
+
+    h1:first-of-type{
+        padding: 10px 10px;
+    }
+
+    h1{
+        font-size: 18px;
+        color: $color-black;
+    }
+    h2{
+        font-size: 17px;
+        color: $color-black;
+        border-top: 2px solid #EFEFEF;
+        border-bottom: 2px solid #EFEFEF;
+        padding: 15px 10px;
+    }
+    h2:nth-of-type(2){
+        margin-bottom: -12px;
+    }
+
+    &_input{
+        padding-left: 10px;
+        @include grid(1fr, 10px);
+
+        &_{
+            @include flex(center, flex-start, 5px);
+        }
+    }
+    &_price{
+        padding-left: 10px;
+        @include grid(auto, 10px);
+
+        &_center{
+            @include grid(1fr 0.5fr 1fr, 10px);
+
+            &_left, &_right{
+                &_{
+                    width: 95px;
+                    height: 40px;
+                    border-radius: 7px;
+                    border: 2px solid #EFEFEF;
+                    @include flex(center, center, 0);
+                }
+            }
+        }
+
+        &_end{
+            padding: 0 10px;
+
+            input{
+                width: 100%;
+                color: red;
+            }
+        }
+    }
+    &_bottom{
+        @include grid(1fr, 10px);
+        &_:first-of-type{
+            border-top: 2px solid #EFEFEF;
+            border-bottom: 2px solid #EFEFEF;
+        }
+
+        &_{
+            @include flex(center, space-between, 0);
+            padding: 15px 20px;
+
+            h3{
+                font-size: 16px;
+                color: $color-black;
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px){
+    .cards_items{
+        @include grid(1fr 1fr, 20px);
+        width: 65%;
+    }
+}
+@media (max-width: 850px){
+    .cards_filter{
+        display: none;
+    }
+    .cards_items{
+        width: 100%;
+    }
+}
+@media (max-width: 550px){
+    .cards_items{
+        @include grid(1fr, 30px);
+    }
+}

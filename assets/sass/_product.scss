@@ -1,3 +1,8 @@
+.other__title{
+    font-size: 30px;
+    color: $color-black;
+    font-weight: 700;
+}
 .product_title{
     @include flex(center, space-between, 0);
     padding: 50px 0px;
@@ -142,6 +147,9 @@
 @media (max-width:  550px){
     .product_items{
         @include grid(1fr, 30px);
+    }
+    .other__title{
+        font-size: 18px;
     }
 }
 @media (max-width: 320px){

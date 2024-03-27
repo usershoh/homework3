@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -51,40 +51,25 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </nav>
         </nav>
-        <nav class="navbar_showcase_top">
-          <nav class="navbar_showcase_top_text">
-            <h1>SEEDRA Basil Seeds for Indoor and Outdoor Planting</h1>
-            <p>
-              Be sure of our quality - the freshest batches of this season.
-              Non-GMO, Heirloom - our seeds were tested and have the best
-              germination ratings. Your easy growing experience is our guarantee
-            </p>
-            <nav class="navbar_showcase_top_text_price">
-              <img src="./img/showcase_img.png" alt="" />
-              <h2>$12.56</h2>
-              <h3>$15.56</h3>
-            </nav>
-            <nav class="navbar_showcase_top_text_btn">
-              <button>Add to card</button>
-              <button>Discover</button>
-            </nav>
-          </nav>
-        </nav>
-        <nav class="navbar_showcase_bottom">
-          <img src="./img/showcase_bottom_bg.png" alt="" />
-          <nav class="navbar_showcase_bottom_text">
-            <h1>We sell seeds</h1>
-            <p>that always sprout and gardening supplies which never break</p>
-          </nav>
-        </nav>
       </div>
     </header>
-    <section class="product">
+    <section class="search">
       <div class="container">
-        <div class="product_title">
-          <h1>Our products.</h1>
-          <button>View all (12)</button>
+        <div class="search_input">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
         </div>
+        <div class="search_end">
+          <div class="search_end_left">
+            <h2>Sort by</h2>
+            <h3>Most expensive</h3>
+          </div>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+    <section class="product product__cards.html">
+      <div class="container">
         <div class="product_button">
           <button><img src="./img/product_img11.png" alt="" />ALL</button>
           <button><img src="./img/product_img22.png" alt="" />BUNDLES</button>
@@ -96,7 +81,62 @@
           <button><img src="./img/product_img66.png" alt="" />SUPPLIES</button>
           <button><img src="./img/product_img77.png" alt="" />FLOWERS</button>
         </div>
-        <div class="product_items">
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container">
+        <div class="cards_filter">
+          <h1>FILTERS</h1>
+          <h2>Seed type</h2>
+          <div class="cards_filter_input">
+            <div class="cards_filter_input_">
+              <input type="checkbox" />
+              <p>Hybrid</p>
+            </div>
+            <div class="cards_filter_input_">
+              <input type="checkbox" />
+              <p>Open Pollinated</p>
+            </div>
+            <div class="cards_filter_input_">
+              <input type="checkbox" />
+              <p>Organic Seeds, Plants, and Supplies</p>
+            </div>
+            <div class="cards_filter_input_">
+              <input type="checkbox" />
+              <p>Pelleted See</p>
+            </div>
+          </div>
+          <h2>Featurest</h2>
+          <h2>Growing Conditions</h2>
+          <div class="cards_filter_price">
+            <h1>price</h1>
+            <div class="cards_filter_price_center">
+              <div class="cards_filter_price_center_left">
+                <p>from</p>
+                <div class="cards_filter_price_center_left_">$1232</div>
+              </div>
+              <div class="cards_filter_price_center_"></div>
+              <div class="cards_filter_price_center_left">
+                <p>to</p>
+                <div class="cards_filter_price_center_left_"></div>
+              </div>
+            </div>
+            <div class="cards_filter_price_end">
+              <input type="range" />
+            </div>
+          </div>
+          <div class="cards_filter_bottom">
+            <div class="cards_filter_bottom_">
+              <h3>Use</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="cards_filter_bottom_">
+              <h3>Additional Characteristic</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cards_items product_items">
           <div class="product_item">
             <i class="fa-regular fa-heart like"></i>
             <img src="./img/product_img1.png" alt="" />
@@ -212,173 +252,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="blog">
-      <div class="container">
-        <div class="blog_title">
-          <h1>Our blog.</h1>
-          <button>Go to our blog</button>
-        </div>
-        <div class="blog_items">
-          <div class="blog_item blog_item1">
-            <div class="blog_item_text blog_item1_text">
-              <div class="blog_item_text_time">
-                <i class="fa-solid fa-clock"></i>
-                <h2>12.09.2021</h2>
-              </div>
-              <h1>How to plant spinach correctly in winter</h1>
-              <p>
-                In most areas, successive sowing can be done from early spring
-                until early winter, but more often during hotter months...
-              </p>
-              <button>Read</button>
-            </div>
-            <img src="./img/blog_img1.png" alt="" />
-          </div>
-          <div class="blog_item blog_item2">
-            <div class="blog_item_text blog_item2_text">
-              <div class="blog_item_text_time">
-                <i class="fa-solid fa-clock"></i>
-                <h2>12.09.2021</h2>
-              </div>
-              <h1>How to plant spinach correctly in winter</h1>
-              <p>
-                In most areas, successive sowing can be done from early spring
-                until early winter, but more often during hotter months...
-              </p>
-              <button>Read</button>
-            </div>
-            <img src="./img/blog_img2.png" alt="" />
-          </div>
-          <div class="blog_item blog_item3">
-            <div class="blog_item_text blog_item3_text">
-              <div class="blog_item_text_time">
-                <i class="fa-solid fa-clock"></i>
-                <h2>12.09.2021</h2>
-              </div>
-              <h1>How to plant spinach correctly in winter</h1>
-              <button>Read</button>
-            </div>
-            <img src="./img/blog_img3.png" alt="" />
-          </div>
-          <div class="blog_item blog_item4">
-            <div class="blog_item_text blog_item4_text">
-              <div class="blog_item_text_time">
-                <i class="fa-solid fa-clock"></i>
-                <h2>12.09.2021</h2>
-              </div>
-              <h1>How to plant spinach correctly in winter</h1>
-              <button>Read</button>
-            </div>
-            <img src="./img/blog_img3.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="client">
-      <div class="container">
-        <div class="client_title">What out clients say</div>
-        <div class="client_items">
-          <div class="client_item client_item1">
-            <div class="client_item_title">
-              <img src="./img/client_img1.png" alt="" />
-              <div class="client_item_title_right">
-                <h2>Carla Samantoes-Diego</h2>
-                <h3>12.09.2021</h3>
-              </div>
-            </div>
-            <div class="client_item_star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and
-              professional instructions created by PhD Helga George Be sure of
-              our quality - the freshest batches of this season. Non-GMO,
-              Heirloom - our seeds were tested and have the best germination
-              ratings.
-            </p>
-          </div>
-          <div class="client_item client_item2">
-            <div class="client_item_title">
-              <img src="./img/client_img1.png" alt="" />
-              <div class="client_item_title_right">
-                <h2>Carla Samantoes-Diego</h2>
-                <h3>12.09.2021</h3>
-              </div>
-            </div>
-            <div class="client_item_star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and
-              professional instructions created by PhD Helga George Be sure of
-              our quality - the freshest batches of this season. Non-GMO,
-              Heirloom - our seeds were tested and have the best germination
-              ratings.
-            </p>
-          </div>
-          <div class="client_item client_item3">
-            <div class="client_item_title">
-              <img src="./img/client_img1.png" alt="" />
-              <div class="client_item_title_right">
-                <h2>Carla Samantoes-Diego</h2>
-                <h3>12.09.2021</h3>
-              </div>
-            </div>
-            <div class="client_item_star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and
-              professional instructions created by PhD Helga George Be sure of
-              our quality - the freshest batches of this season. Non-GMO,
-              Heirloom - our seeds were tested and have the best germination
-              ratings.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="seedra">
-      <div class="container">
-        <div class="seedra_text">
-          <h1>
-            Seedra helps to grow fast and <br />
-            efficiant
-          </h1>
-          <p>
-            SEEDRA Spinach Seeds - contains 600 seeds in 2 Packs and <br />
-            professional instructions created by PhD Helga George <br /><br />
-
-            Be sure of our quality - the freshest batches of this season. Non
-            <br />
-            -GMO, Heirloom - our seeds were tested and have the best <br />
-            germination ratings. <br /><br />
-            Your easy growing experience is our guarantee <br />
-            Spinach commom culinary uses: salads, soups, smoothies, lasagne,
-            <br />
-            pizza, pies, risotto, and more <br /><br />
-
-            Proudly sourced in the USA - our garden seeds are grown, <br />
-            harvested, and packaged in the USA. We support local farmers and
-            <br />
-            are happy to produce this American-made product
-          </p>
-        </div>
-        <img src="./img/seedra_img.png" alt="" />
       </div>
     </section>
     <footer class="footer">
